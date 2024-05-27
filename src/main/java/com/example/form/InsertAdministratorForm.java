@@ -15,10 +15,12 @@ public class InsertAdministratorForm {
 	@NotBlank(message = "名前は必須です")
 	private String name;
 	/** メールアドレス */
+	@NotBlank(message = "メールアドレスは必須です")
 	@Size(min = 1, max = 127, message = "Eメールは1文字以上127文字以内で記載してください")
 	@Email(message = "Eメールの形式が不正です")
 	private String mailAddress;
 	/** パスワード */
+	@NotBlank(message = "パスワードは必須です")
 	@Size(min = 1, max = 127, message = "パスワードは1文字以上127文字以内で記載してください")
 	private String password;
 
